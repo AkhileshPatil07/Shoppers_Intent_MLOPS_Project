@@ -231,7 +231,7 @@ curl -X POST "https://shoppers-intent-mlops.onrender.com/predict" \
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/NiharGudadhe/Shoppers-Intent-MLOps.git
+git clone https://github.com/AkhileshPatil07/Shoppers-Intent-MLOps.git
 cd Shoppers-Intent-MLOps
 ```
 
