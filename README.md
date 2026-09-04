@@ -7,7 +7,6 @@ A production-grade, end-to-end MLOps project that predicts whether an online sho
 [![MLflow](https://img.shields.io/badge/Tracking-MLflow-0194E2)](https://mlflow.org/)
 [![Docker](https://img.shields.io/badge/Container-Docker-2496ED)](https://www.docker.com/)
 [![CI/CD](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF)](https://github.com/features/actions)
-[![License](https://img.shields.io/badge/License-MIT-lightgrey)](#license)
 
 ---
 
