@@ -232,7 +232,7 @@ curl -X POST "https://shoppers-intent-mlops.onrender.com/predict" \
 
 ```bash
 git clone https://github.com/AkhileshPatil07/Shoppers_Intent_MLOPS_Project.git
-cd Shoppers-Intent-MLOps
+cd Shoppers_Intent_MLOPS_Project
 ```
 
 ### 2. Create a virtual environment and install dependencies
