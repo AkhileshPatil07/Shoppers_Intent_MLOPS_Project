@@ -15,7 +15,7 @@ A production-grade, end-to-end MLOps project that predicts whether an online sho
 Online retailers lose revenue when they can't tell, in real time, which browsing sessions are likely to convert. **Shoppers Intent MLOps** solves this by wrapping a purchase-intent classifier in a complete MLOps lifecycle — not just a notebook model, but a system that ingests data, tracks experiments, serves predictions via an API, watches for drift, and retrains itself on a schedule.
 
 - 🔗 **Live App**: ([https://shoppers-intent-mlops-project.onrender.com](https://shoppers-intent-mlops-project.onrender.com))
-- 📑 **Swagger / API Docs**: [shoppers-intent-mlops-project.onrender.com/docs]
+- 📑 **Swagger / API Docs**: [[shoppers-intent-mlops-project.onrender.com/docs]](https://shoppers-intent-mlops-project.onrender.com/docs)
 
 > ⚠️ Hosted on Render's free tier — the first request after idle time may take 30–60s to spin up.
 
