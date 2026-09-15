@@ -98,44 +98,61 @@ Online retailers lose revenue when they can't tell, in real time, which browsing
 
 ## 📁 Project Structure
 
-```
-shoppers-intent-mlops/
+```text
+Shoppers_Intent_MLOPS_Project/
+│
+├── .github/
+│   └── workflows/
+│       └── ci_cd.yml              # GitHub Actions CI/CD pipeline
+│
 ├── api/
-│   ├── templates/index.html     # frontend HTML
-│   ├── static/style.css         # frontend CSS
-│   ├── static/script.js         # frontend JavaScript
-│   └── main.py                  # FastAPI app
+│   ├── templates/
+│   │   └── index.html             # Web application frontend
+│   │
+│   ├── static/
+│   │   ├── style.css              # Frontend styling
+│   │   └── script.js              # Frontend JavaScript
+│   │
+│   └── main.py                    # FastAPI application
+│
 ├── data/
-│   ├── online_shoppers_intention.csv  # raw dataset
-│   └── reload_data.py           # CSV → MySQL loader
+│   ├── online_shoppers_intention.csv  # Raw dataset
+│   └── reload_data.py              # Load dataset into MySQL
+│
 ├── etl/
-│   ├── extract.py               # extract from MySQL
-│   ├── transform.py             # clean, validate, encode
-│   └── load.py                  # load to PostgreSQL
+│   ├── extract.py                  # Extract data from MySQL
+│   ├── transform.py                # Clean and transform data
+│   └── load.py                     # Load processed data into PostgreSQL
+│
 ├── ml/
-│   ├── preprocess.py            # scaling, feature selection, SMOTE
-│   ├── train.py                 # train RF + XGB + LGBM with tuning
-│   ├── evaluate.py              # evaluate saved model
-│   ├── predict.py               # make predictions
-│   └── mlflow_tracker.py        # MLflow tracking + registry
+│   ├── preprocess.py               # Scaling, feature selection & SMOTE
+│   ├── train.py                    # Model training & hyperparameter tuning
+│   ├── evaluate.py                 # Model evaluation
+│   ├── predict.py                  # Generate predictions
+│   └── mlflow_tracker.py           # MLflow experiment tracking & registry
+│
 ├── monitoring/
-│   └── drift_report.py          # Evidently drift report
+│   └── drift_report.py             # Evidently AI data drift monitoring
+│
+├── notebook/                       # Exploratory analysis / notebooks
+│
 ├── scheduler/
-│   └── retrain_job.py           # APScheduler auto-retrain
+│   └── retrain_job.py              # Scheduled model retraining
+│
 ├── tests/
-│   └── test_api.py              # Pytest tests
+│   └── test_api.py                 # API tests using Pytest
+│
 ├── utils/
-│   └── logger.py                # common logging module
-├── logs/                        # log files
-├── .github/workflows/
-│   └── ci_cd.yml                # GitHub Actions CI/CD
-├── .env.example                 # env variable template
-├── .gitignore
-├── .dockerignore
-├── Dockerfile
-├── render.yaml                  # Render deployment config
-└── requirements.txt
-```
+│   └── logger.py                   # Centralized application logging
+│
+├── .dockerignore                   # Docker ignore rules
+├── .env.example                    # Environment variable template
+├── .gitignore                      # Git ignore rules
+├── Dockerfile                      # Docker container configuration
+├── README.md                       # Project documentation
+├── apt.txt                         # System-level dependencies
+└── requirements.txt                # Python dependencies
+
 
 ---
 
